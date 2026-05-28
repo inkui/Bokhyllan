@@ -1,0 +1,13 @@
+<svg width="720" height="1060" viewBox="0 0 720 1060" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abstrakt bokomslag i mörkgrönt och varm mässing">
+  <rect width="720" height="1060" fill="#132f2a"/>
+  <rect x="44" y="44" width="632" height="972" fill="#173a33" stroke="#b8956d" stroke-width="2"/>
+  <path d="M104 690C190 620 273 596 352 618C448 645 511 621 616 540V1016H104V690Z" fill="#0e221f"/>
+  <path d="M96 302C188 228 273 212 354 254C445 302 531 275 626 196" stroke="#b8956d" stroke-width="5" stroke-linecap="round"/>
+  <path d="M96 344C190 272 271 259 347 296C438 340 527 319 626 246" stroke="#8a6f48" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="532" cy="172" r="52" fill="#efe3c7" fill-opacity="0.86"/>
+  <rect x="112" y="118" width="78" height="6" fill="#b8956d"/>
+  <rect x="112" y="142" width="132" height="3" fill="#efe3c7" fill-opacity="0.62"/>
+  <rect x="112" y="168" width="102" height="3" fill="#efe3c7" fill-opacity="0.42"/>
+  <rect x="110" y="866" width="218" height="4" fill="#b8956d" fill-opacity="0.74"/>
+  <rect x="110" y="894" width="156" height="4" fill="#efe3c7" fill-opacity="0.44"/>
+</svg>
