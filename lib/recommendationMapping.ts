@@ -1,51 +1,14 @@
 import type { FlowAnswers, FlowKind } from "@/data/recommendationFlow";
+import { getBookById } from "@/data/library/books/books";
+import { chooseBookForRecommendation } from "@/data/library/mappings/recommendationRules";
 
-export type RecommendationId =
-  | "handelser-vid-vatten"
-  | "gilead"
-  | "gentleman-i-moskva";
+export type RecommendationId = string;
 
 export function chooseRecommendationId(
   flow: FlowKind,
   answers: FlowAnswers,
 ): RecommendationId {
-  if (flow === "self") {
-    if (
-      answers.longing === "stillsamt" ||
-      answers.energy === "valdigt-lite" ||
-      answers.pace === "mjuk"
-    ) {
-      return "gilead";
-    }
-
-    if (
-      answers.longing === "varmt" ||
-      answers.longing === "uppslukande" ||
-      answers.energy === "nagot-stort"
-    ) {
-      return "gentleman-i-moskva";
-    }
-
-    return "handelser-vid-vatten";
-  }
-
-  if (
-    answers.person === "behover-vila" ||
-    answers.gift === "trost" ||
-    answers.tone === "varm"
-  ) {
-    return "gilead";
-  }
-
-  if (
-    answers.person === "rastlos" ||
-    answers.person === "soker-nytt" ||
-    answers.gift === "energi"
-  ) {
-    return "gentleman-i-moskva";
-  }
-
-  return "handelser-vid-vatten";
+  return chooseBookForRecommendation({ flow, answers }).id;
 }
 
 export function getRecommendationIdFromParams(
@@ -53,13 +16,9 @@ export function getRecommendationIdFromParams(
 ): RecommendationId {
   const id = Array.isArray(value) ? value[0] : value;
 
-  if (
-    id === "gilead" ||
-    id === "gentleman-i-moskva" ||
-    id === "handelser-vid-vatten"
-  ) {
-    return id;
+  if (!id) {
+    return "handelser-vid-vatten";
   }
 
-  return "handelser-vid-vatten";
+  return getBookById(id).id;
 }

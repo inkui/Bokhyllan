@@ -1,0 +1,12 @@
+<svg width="720" height="1060" viewBox="0 0 720 1060" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abstrakt bokomslag">
+  <rect width="720" height="1060" fill="#efe3c7"/>
+  <rect x="52" y="52" width="616" height="956" fill="#f6eddb" stroke="#8a6f48" stroke-width="2"/>
+  <rect x="120" y="168" width="480" height="5" fill="#b8956d"/>
+  <rect x="176" y="240" width="368" height="3" fill="#8a6f48" fill-opacity="0.5"/>
+  <rect x="220" y="270" width="280" height="3" fill="#8a6f48" fill-opacity="0.32"/>
+  <circle cx="360" cy="472" r="92" fill="#16362f" fill-opacity="0.9"/>
+  <circle cx="360" cy="472" r="58" fill="#efe3c7"/>
+  <path d="M210 694C276 646 326 630 380 648C430 665 478 648 530 604" stroke="#5c3d2e" stroke-width="5" stroke-linecap="round"/>
+  <path d="M210 736C276 688 326 672 380 690C430 707 478 690 530 646" stroke="#b8956d" stroke-width="3" stroke-linecap="round"/>
+  <rect x="224" y="844" width="272" height="4" fill="#8a6f48" fill-opacity="0.46"/>
+</svg>

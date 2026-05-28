@@ -1,0 +1,302 @@
+import type { Book } from "@/data/library/books/bookTypes";
+
+export const books: Book[] = [
+  {
+    id: "handelser-vid-vatten",
+    title: "Händelser vid vatten",
+    author: "Kerstin Ekman",
+    coverImage: "/covers/handelser-vid-vatten.svg",
+    shortDescription: "Mörk, klar och djupt mänsklig.",
+    emotionalDescription:
+      "Det här är en bok för när man vill att läsningen ska få ta plats på riktigt. Den rör sig långsamt genom landskap, minne och skuld, men bär hela tiden en märklig värme: som om någon tänder en lampa i ett rum man först trodde var tomt.",
+    voiceNote:
+      "Rösten är tät och stillsam, med ett förtroende för läsaren. Den förklarar inte för mycket, men lämnar aldrig känslan utan sällskap.",
+    practicalNotes: [
+      "ca 470 sidor",
+      "långsam läsning",
+      "stark platskänsla",
+      "viss mörker",
+    ],
+    emotionalTone: ["still", "clear", "haunting"],
+    readingState: ["needs_perspective", "ready_for_depth", "restless"],
+    pacing: ["slow", "deep"],
+    emotionalEffects: ["opens_perspective", "deepens_feeling"],
+    readingEnergy: "medium",
+    lengthCategory: "long",
+    atmosphere: "dark",
+    affiliateRequest: {
+      retailer: "bokus",
+      title: "Händelser vid vatten",
+      author: "Kerstin Ekman",
+    },
+  },
+  {
+    id: "gilead",
+    title: "Gilead",
+    author: "Marilynne Robinson",
+    coverImage: "/covers/gilead.svg",
+    shortDescription: "Varsam, ljus och stilla stark.",
+    emotionalDescription:
+      "Det här är en bok för den som behöver något långsamt och bärande. Den rör sig som ett förtroligt brev genom tro, minne och kärlek, och låter de små sakerna få sin rätta tyngd utan att höja rösten.",
+    voiceNote:
+      "Rösten är mild men aldrig tunn. Den har en sällsynt förmåga att göra vardagen större utan att göra den högtidlig.",
+    practicalNotes: [
+      "ca 280 sidor",
+      "lågmäld",
+      "varm efterklang",
+      "passar långsam läsning",
+    ],
+    emotionalTone: ["still", "warm", "hopeful", "tender"],
+    readingState: ["emotionally_tired", "wants_comfort", "searching_for_calm"],
+    pacing: ["slow", "steady"],
+    emotionalEffects: ["calms", "comforts", "restores_attention"],
+    readingEnergy: "low",
+    lengthCategory: "medium",
+    atmosphere: "hopeful",
+    affiliateRequest: {
+      retailer: "generic",
+      title: "Gilead",
+      author: "Marilynne Robinson",
+    },
+  },
+  {
+    id: "gentleman-i-moskva",
+    title: "En gentleman i Moskva",
+    author: "Amor Towles",
+    coverImage: "/covers/gentleman-i-moskva.svg",
+    shortDescription: "Elegant, varm och ovanligt sällskaplig.",
+    emotionalDescription:
+      "Det här är en bok för när man vill kliva in i en värld som känns stor men ändå trygg. Den har rörelse, kvickhet och mänsklig värme, men låter aldrig charmen bli tom eller stressad.",
+    voiceNote:
+      "Rösten är generös och behärskad, med ett lugnt förtroende för att goda samtal, måltider och små ritualer kan bära ett helt liv.",
+    practicalNotes: [
+      "ca 460 sidor",
+      "uppslukande",
+      "varm ton",
+      "tydlig berättarglädje",
+    ],
+    emotionalTone: ["warm", "immersive", "quietly_funny", "hopeful"],
+    readingState: ["wants_immersion", "lonely", "restless"],
+    pacing: ["absorbing", "steady"],
+    emotionalEffects: ["keeps_company", "awakens_wonder"],
+    readingEnergy: "medium",
+    lengthCategory: "long",
+    atmosphere: "warm",
+    affiliateRequest: {
+      retailer: "generic",
+      title: "En gentleman i Moskva",
+      author: "Amor Towles",
+    },
+  },
+  {
+    id: "sommarboken",
+    title: "Sommarboken",
+    author: "Tove Jansson",
+    shortDescription: "Ljus, kantig och öm utan sentimentalitet.",
+    emotionalDescription:
+      "En liten bok som rymmer ovanligt mycket luft. Den passar när man vill ha värme, men inte tröst som förenklar; här finns närhet, egensinne och en stillsam respekt för både barn och vuxna.",
+    voiceNote:
+      "Rösten är klar och varsam, med små skiftningar som gör att det enkla aldrig blir tunt.",
+    practicalNotes: ["kort", "lågmäld", "natur och närhet", "mjuk efterklang"],
+    emotionalTone: ["warm", "clear", "tender"],
+    readingState: ["wants_comfort", "overstimulated", "searching_for_calm"],
+    pacing: ["slow", "lightweight"],
+    emotionalEffects: ["calms", "comforts", "restores_attention"],
+    readingEnergy: "very_low",
+    lengthCategory: "short",
+    atmosphere: "warm",
+    affiliateRequest: {
+      retailer: "generic",
+      title: "Sommarboken",
+      author: "Tove Jansson",
+    },
+  },
+  {
+    id: "brant-barn",
+    title: "Bränt barn",
+    author: "Stig Dagerman",
+    shortDescription: "Klar, sårig och skoningslöst mänsklig.",
+    emotionalDescription:
+      "Det här är en bok för den som vill möta något rakt, inte bli avledd. Den är mörk och precis, men också märkligt levande i sin blick på skuld, begär och de känslor man helst vill slippa se.",
+    voiceNote:
+      "Språket är stramt och brännande, med en skärpa som aldrig känns mekanisk.",
+    practicalNotes: ["kort till medellång", "emotionellt intensiv", "klar prosa"],
+    emotionalTone: ["clear", "melancholic", "haunting"],
+    readingState: ["ready_for_depth", "grieving", "needs_perspective"],
+    pacing: ["deep", "demanding"],
+    emotionalEffects: ["clarifies", "deepens_feeling"],
+    readingEnergy: "medium",
+    lengthCategory: "medium",
+    atmosphere: "dark",
+    affiliateRequest: {
+      retailer: "generic",
+      title: "Bränt barn",
+      author: "Stig Dagerman",
+    },
+  },
+  {
+    id: "outline",
+    title: "Outline",
+    author: "Rachel Cusk",
+    shortDescription: "Skarp, stilla och ovanligt lyhörd.",
+    emotionalDescription:
+      "En bok för den som vill ha klarhet utan att bli styrd. Den lyssnar mer än den förklarar, och låter människors berättelser lägga sig bredvid varandra tills något större långsamt framträder.",
+    voiceNote:
+      "Rösten är sval men inte kall; den har en närvaro som bygger förtroende genom precision.",
+    practicalNotes: ["ca 250 sidor", "samtalande", "klartänkt", "lågmäld"],
+    emotionalTone: ["clear", "still"],
+    readingState: ["wants_intellectual_clarity", "needs_perspective"],
+    pacing: ["steady", "deep"],
+    emotionalEffects: ["clarifies", "opens_perspective"],
+    readingEnergy: "medium",
+    lengthCategory: "medium",
+    atmosphere: "clear",
+    affiliateRequest: {
+      retailer: "generic",
+      title: "Outline",
+      author: "Rachel Cusk",
+    },
+  },
+  {
+    id: "aterstoden-av-dagen",
+    title: "Återstoden av dagen",
+    author: "Kazuo Ishiguro",
+    shortDescription: "Återhållen, sorgsen och vackert klar.",
+    emotionalDescription:
+      "Det här är en bok för någon som uppskattar det outsagda. Den rör sig varsamt genom minne, plikt och förlorade möjligheter, och blir stark just för att den aldrig ber om stora gester.",
+    voiceNote:
+      "Rösten är behärskad och exakt, med en sorg som långsamt blir synlig mellan raderna.",
+    practicalNotes: ["ca 270 sidor", "stilla sorg", "elegant prosa"],
+    emotionalTone: ["melancholic", "clear", "tender"],
+    readingState: ["needs_perspective", "grieving", "ready_for_depth"],
+    pacing: ["slow", "steady"],
+    emotionalEffects: ["deepens_feeling", "opens_perspective"],
+    readingEnergy: "low",
+    lengthCategory: "medium",
+    atmosphere: "melancholic",
+    affiliateRequest: {
+      retailer: "generic",
+      title: "Återstoden av dagen",
+      author: "Kazuo Ishiguro",
+    },
+  },
+  {
+    id: "stoner",
+    title: "Stoner",
+    author: "John Williams",
+    shortDescription: "Stillsam, rak och överraskande gripande.",
+    emotionalDescription:
+      "En bok för den som vill läsa om ett vanligt liv utan att det görs mindre. Den är lågmäld och klar, med en tro på att värdighet kan finnas i det som nästan ingen annan ser.",
+    voiceNote:
+      "Rösten är enkel på ytan men mycket omsorgsfull, med en långsam tyngd som stannar kvar.",
+    practicalNotes: ["ca 300 sidor", "lågmäld", "djup efterklang"],
+    emotionalTone: ["still", "melancholic", "tender"],
+    readingState: ["emotionally_tired", "needs_perspective", "lonely"],
+    pacing: ["slow", "steady"],
+    emotionalEffects: ["keeps_company", "deepens_feeling"],
+    readingEnergy: "low",
+    lengthCategory: "medium",
+    atmosphere: "still",
+    affiliateRequest: {
+      retailer: "generic",
+      title: "Stoner",
+      author: "John Williams",
+    },
+  },
+  {
+    id: "dora-bruder",
+    title: "Dora Bruder",
+    author: "Patrick Modiano",
+    shortDescription: "Sökande, dunkel och varsamt sorgsen.",
+    emotionalDescription:
+      "Det här är en bok för när frånvaro känns viktigare än svar. Den söker efter spår utan att äga dem, och låter minnet vara både ömtåligt och nödvändigt.",
+    voiceNote:
+      "Rösten är lågmäld och nästan viskande, med en moralisk uppmärksamhet som gör tystnaden betydelsefull.",
+    practicalNotes: ["kort", "sökande", "melankolisk", "historisk tyngd"],
+    emotionalTone: ["melancholic", "haunting", "still"],
+    readingState: ["grieving", "ready_for_depth", "needs_perspective"],
+    pacing: ["slow", "deep"],
+    emotionalEffects: ["makes_room_for_grief", "opens_perspective"],
+    readingEnergy: "medium",
+    lengthCategory: "short",
+    atmosphere: "melancholic",
+    affiliateRequest: {
+      retailer: "generic",
+      title: "Dora Bruder",
+      author: "Patrick Modiano",
+    },
+  },
+  {
+    id: "den-allvarsamma-leken",
+    title: "Den allvarsamma leken",
+    author: "Hjalmar Söderberg",
+    shortDescription: "Klar, vemodig och elegant mänsklig.",
+    emotionalDescription:
+      "En bok för den som vill läsa något svenskt, tidlöst och emotionellt exakt. Den ser på längtan och självbedrägeri utan att moralisera, och gör det med en prosa som fortfarande känns levande.",
+    voiceNote:
+      "Rösten är elegant och skarp, men aldrig prålig; värmen ligger i precisionen.",
+    practicalNotes: ["kort till medellång", "klassisk", "vemodig klarhet"],
+    emotionalTone: ["clear", "melancholic", "tender"],
+    readingState: ["needs_perspective", "wants_intellectual_clarity"],
+    pacing: ["steady", "deep"],
+    emotionalEffects: ["clarifies", "deepens_feeling"],
+    readingEnergy: "medium",
+    lengthCategory: "medium",
+    atmosphere: "clear",
+    affiliateRequest: {
+      retailer: "generic",
+      title: "Den allvarsamma leken",
+      author: "Hjalmar Söderberg",
+    },
+  },
+  {
+    id: "det-vilda-torget",
+    title: "Det vilda torget",
+    author: "Tomas Tranströmer",
+    shortDescription: "Klar, stilla och vidöppen.",
+    emotionalDescription:
+      "En tunn bok för när man inte orkar bära en hel roman men ändå vill läsa något som öppnar rummet. Dikterna är precisa utan att stänga, och kan ge en märklig känsla av syre.",
+    voiceNote:
+      "Rösten är stilla och koncentrerad, med bilder som får vardagen att luta mot något större.",
+    practicalNotes: ["poesi", "kort", "kan läsas långsamt", "mycket rymd"],
+    emotionalTone: ["clear", "still", "hopeful"],
+    readingState: ["overstimulated", "searching_for_calm", "emotionally_tired"],
+    pacing: ["slow", "lightweight"],
+    emotionalEffects: ["restores_attention", "awakens_wonder", "calms"],
+    readingEnergy: "very_low",
+    lengthCategory: "short",
+    atmosphere: "clear",
+    affiliateRequest: {
+      retailer: "generic",
+      title: "Det vilda torget",
+      author: "Tomas Tranströmer",
+    },
+  },
+  {
+    id: "samuel-bok",
+    title: "Samuels bok",
+    author: "Sven Delblanc",
+    shortDescription: "Mustig, mörk och mänskligt rik.",
+    emotionalDescription:
+      "Det här är en bok för den som vill ha en större berättelse med tyngd, värme och jord under naglarna. Den är inte lätt, men den har en levande kraft som gör att världen känns befolkad på riktigt.",
+    voiceNote:
+      "Rösten är rik och säker, med både skärpa och berättarglädje.",
+    practicalNotes: ["lång", "svensk berättarkraft", "mörk värme"],
+    emotionalTone: ["immersive", "warm", "haunting"],
+    readingState: ["wants_immersion", "ready_for_depth"],
+    pacing: ["absorbing", "deep"],
+    emotionalEffects: ["awakens_wonder", "deepens_feeling"],
+    readingEnergy: "high",
+    lengthCategory: "long",
+    atmosphere: "immersive",
+    affiliateRequest: {
+      retailer: "generic",
+      title: "Samuels bok",
+      author: "Sven Delblanc",
+    },
+  },
+];
+
+export function getBookById(id: string) {
+  return books.find((book) => book.id === id) ?? books[0];
+}
