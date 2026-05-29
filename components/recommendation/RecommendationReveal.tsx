@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { BookCover } from "@/components/recommendation/BookCover";
 import { PracticalNotes } from "@/components/recommendation/PracticalNotes";
@@ -7,6 +8,7 @@ import { RecommendationActions } from "@/components/recommendation/Recommendatio
 import { RecommendationExplanation } from "@/components/recommendation/RecommendationExplanation";
 import { slowReveal, staggerChildren } from "@/lib/motion";
 import type { Recommendation } from "@/data/sampleRecommendations";
+import type { CuratorRevealCopy } from "@/data/library/intelligence/recommendationResolver";
 
 type RecommendationRevealProps = {
   recommendation: Recommendation;
@@ -15,6 +17,22 @@ type RecommendationRevealProps = {
 export function RecommendationReveal({
   recommendation,
 }: RecommendationRevealProps) {
+  const [curatorCopy, setCuratorCopy] = useState<CuratorRevealCopy>();
+
+  useEffect(() => {
+    const frame = window.requestAnimationFrame(() => {
+      const storedCopy = window.sessionStorage.getItem(
+        `bokhyllan:curator-copy:${recommendation.id}`,
+      );
+
+      if (storedCopy) {
+        setCuratorCopy(JSON.parse(storedCopy) as CuratorRevealCopy);
+      }
+    });
+
+    return () => window.cancelAnimationFrame(frame);
+  }, [recommendation.id]);
+
   return (
     <motion.section
       variants={staggerChildren}
@@ -32,7 +50,7 @@ export function RecommendationReveal({
         className="rounded-quiet border border-brass/25 bg-paper-soft px-6 py-8 text-ink shadow-book sm:px-10 sm:py-11"
       >
         <p className="mb-5 font-serif text-[1.55rem] italic leading-snug text-brass-muted sm:text-3xl">
-          {recommendation.emotionalDescriptor}
+          {curatorCopy?.openingLine ?? recommendation.emotionalDescriptor}
         </p>
         <h1
           id="recommendation-title"
@@ -42,7 +60,16 @@ export function RecommendationReveal({
         </h1>
         <p className="mt-3 text-base text-ink-soft">av {recommendation.author}</p>
 
-        <RecommendationExplanation recommendation={recommendation} />
+        {curatorCopy?.recognition ? (
+          <p className="mt-7 border-l border-brass/70 pl-5 font-serif text-[1.18rem] leading-8 text-ink-soft sm:text-xl">
+            {curatorCopy.recognition}
+          </p>
+        ) : null}
+
+        <RecommendationExplanation
+          recommendation={recommendation}
+          curatorCopy={curatorCopy}
+        />
         <PracticalNotes notes={recommendation.practicalNotes} />
         <RecommendationActions recommendation={recommendation} />
       </motion.article>

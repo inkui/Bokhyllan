@@ -4,24 +4,37 @@ import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import type { RecommendationId } from "@/lib/recommendationMapping";
+import type { CuratorRevealCopy } from "@/data/library/intelligence/recommendationResolver";
 import { slowReveal } from "@/lib/motion";
 
 type RecommendationTransitionProps = {
   recommendationId: RecommendationId;
+  revealNote: string;
+  curatorCopy: CuratorRevealCopy;
 };
 
 export function RecommendationTransition({
   recommendationId,
+  revealNote,
+  curatorCopy,
 }: RecommendationTransitionProps) {
   const router = useRouter();
 
   useEffect(() => {
     const timer = window.setTimeout(() => {
+      window.sessionStorage.setItem(
+        `bokhyllan:reveal-note:${recommendationId}`,
+        revealNote,
+      );
+      window.sessionStorage.setItem(
+        `bokhyllan:curator-copy:${recommendationId}`,
+        JSON.stringify(curatorCopy),
+      );
       router.replace(`/recommend/reveal?id=${recommendationId}`);
     }, 1650);
 
     return () => window.clearTimeout(timer);
-  }, [recommendationId, router]);
+  }, [curatorCopy, recommendationId, revealNote, router]);
 
   return (
     <motion.section

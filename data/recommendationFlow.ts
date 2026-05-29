@@ -8,78 +8,107 @@ export type AnswerOption = {
 export type Question = {
   id: string;
   prompt: string;
+  subtext?: string;
   answers: AnswerOption[];
 };
 
 export type FlowAnswers = Record<string, string>;
 
-export const giftQuestions: Question[] = [
+export const selfQuestions: Question[] = [
   {
-    id: "person",
-    prompt: "Hur skulle du beskriva personen just nu?",
+    id: "self_present_moment",
+    prompt: "Hur har den senaste tiden känts?",
+    subtext: "Välj det som känns närmast.",
     answers: [
-      { id: "eftertanksam", label: "eftertänksam" },
-      { id: "rastlos", label: "rastlös" },
-      { id: "behover-vila", label: "behöver vila" },
-      { id: "svar-att-na", label: "svår att nå" },
-      { id: "varm", label: "varm" },
-      { id: "soker-nytt", label: "söker något nytt" },
+      { id: "heavy", label: "Tung och krävande" },
+      { id: "quiet_empty", label: "Stillsam, lite tom" },
+      { id: "restless", label: "Rörig, svår att landa i" },
+      { id: "okay_needs_space", label: "Ganska okej, men jag behöver andrum" },
+      { id: "transitioning", label: "Ny eller förändrad, på gott och ont" },
     ],
   },
   {
-    id: "gift",
-    prompt: "Vad hoppas du att boken ska ge?",
+    id: "self_emotional_need",
+    prompt: "Vad behöver du mest av en bok just nu?",
     answers: [
-      { id: "lugn", label: "lugn" },
-      { id: "sallskap", label: "sällskap" },
-      { id: "perspektiv", label: "perspektiv" },
-      { id: "energi", label: "energi" },
-      { id: "trost", label: "tröst" },
-      { id: "narvaro", label: "närvaro" },
+      { id: "presence_no_demands", label: "Något att vara i, utan krav" },
+      { id: "companionship", label: "Sällskap, att inte vara ensam med tankarna" },
+      { id: "distance_from_self", label: "Lite avstånd från mig själv" },
+      { id: "perspective", label: "Perspektiv, ett annat sätt att se" },
+      { id: "beauty", label: "Något vackert. Det räcker." },
     ],
   },
   {
-    id: "tone",
-    prompt: "Vilken sorts närvaro passar bäst?",
+    id: "self_reading_energy",
+    prompt: "Hur ser din läsning ut just nu?",
     answers: [
-      { id: "lagmald", label: "lågmäld" },
-      { id: "varm", label: "varm" },
-      { id: "klar", label: "klar" },
-      { id: "djup", label: "djup" },
+      { id: "short_sessions", label: "Korta stunder, det är vad jag har" },
+      { id: "time_not_energy", label: "Jag har tid, men orken varierar" },
+      { id: "full_attention", label: "Jag kan ge en bok min fulla uppmärksamhet" },
+      { id: "returning", label: "Jag är på väg tillbaka. Det har gått ett tag." },
+    ],
+  },
+  {
+    id: "self_desired_experience",
+    prompt: "Om den här boken vore ett rum, vilket skulle du vilja kliva in i?",
+    answers: [
+      { id: "small_warm_room", label: "Ett litet, varmt rum. Stilla och tryggt." },
+      {
+        id: "wide_unfamiliar_landscape",
+        label: "Ett stort fönster mot ett landskap du inte känner igen.",
+      },
+      { id: "reading_room_clarity", label: "En bibliotekslässal. Koncentration och lugn." },
+      { id: "another_persons_home", label: "Någon annans hem. Nyfiken närvaro." },
+      { id: "open_air_movement", label: "Utsidan, rörelse och frisk luft." },
     ],
   },
 ];
 
-export const selfQuestions: Question[] = [
+export const giftQuestions: Question[] = [
   {
-    id: "longing",
-    prompt: "Vad längtar du efter att läsa just nu?",
+    id: "gift_person_nature",
+    prompt: "Hur skulle du beskriva den du köper till?",
+    subtext: "Välj det som känns närmast. Det behöver inte vara exakt.",
     answers: [
-      { id: "stillsamt", label: "något stillsamt" },
-      { id: "varmt", label: "något varmt" },
-      { id: "uppslukande", label: "något uppslukande" },
-      { id: "klartankt", label: "något klartänkt" },
-      { id: "stannar-kvar", label: "något som stannar kvar" },
+      { id: "warm_carries_others", label: "Varm och nära, bär mycket för andra" },
+      { id: "thoughtful_depth", label: "Eftertänksam, föredrar djup framför bredd" },
+      { id: "curious_outward", label: "Nyfiken på världen, öppen och utåtriktad" },
+      { id: "private_needs_space", label: "Privat. Behöver tid för sig själv." },
+      { id: "uncertain_not_close", label: "Jag vet inte riktigt. Vi är inte så nära." },
     ],
   },
   {
-    id: "energy",
-    prompt: "Hur mycket läsork har du?",
+    id: "gift_life_moment",
+    prompt: "Är det något som händer i personens liv just nu?",
+    subtext: "Om du inte vet, eller om inget särskilt pågår, är det också ett svar.",
     answers: [
-      { id: "valdigt-lite", label: "väldigt lite" },
-      { id: "lite-nyfiken", label: "lite men nyfiken" },
-      { id: "ganska-mycket", label: "ganska mycket" },
-      { id: "nagot-stort", label: "ge mig något stort" },
+      { id: "going_through_difficulty", label: "Något tungt pågår" },
+      { id: "new_beginning", label: "Något nytt är på väg, förändring eller möjlighet" },
+      { id: "quiet_lonely_period", label: "En stillsam period, kanske lite ensamhet" },
+      { id: "needs_respite", label: "Behöver andrum, livet kräver mycket" },
+      { id: "ordinary_moment", label: "Inget särskilt. Ett vanligt läge." },
     ],
   },
   {
-    id: "pace",
-    prompt: "Vilken takt vill du få följa?",
+    id: "gift_hope",
+    prompt: "Vad hoppas du att boken ska göra?",
+    subtext: "Det här är ofta det bästa sättet att hitta rätt bok.",
     answers: [
-      { id: "langsam", label: "långsam" },
-      { id: "mjuk", label: "mjuk" },
-      { id: "drivande", label: "drivande" },
-      { id: "efterklang", label: "med efterklang" },
+      { id: "hope_companionship", label: "Ge sällskap, att känna sig mindre ensam" },
+      { id: "hope_relief", label: "Ge lite lättnad, en paus från det som är tungt" },
+      { id: "hope_perspective", label: "Öppna upp något, ge perspektiv eller tankar" },
+      { id: "hope_joy_of_reading", label: "Påminna om att läsning kan vara en glädje" },
+      { id: "hope_beauty", label: "Ge något vackert. Ingenting mer." },
+    ],
+  },
+  {
+    id: "gift_reading_relationship",
+    prompt: "Hur är personens relation till böcker och läsning?",
+    answers: [
+      { id: "regular_reader", label: "Läser regelbundet och mycket" },
+      { id: "occasional_reader", label: "Läser när livet lämnar plats" },
+      { id: "aspiring_reader", label: "Vill läsa mer. Det har blivit en önskan." },
+      { id: "uncertain_reading_life", label: "Jag är inte säker. Vi pratar inte om böcker." },
     ],
   },
 ];

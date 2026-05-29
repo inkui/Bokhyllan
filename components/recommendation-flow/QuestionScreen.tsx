@@ -62,6 +62,11 @@ export function QuestionScreen({ flow, questions, intro }: QuestionScreenProps) 
         >
           {currentQuestion.prompt}
         </h1>
+        {currentQuestion.subtext ? (
+          <p className="mt-4 max-w-xl text-base leading-7 text-ink-soft">
+            {currentQuestion.subtext}
+          </p>
+        ) : null}
       </motion.div>
 
       <motion.div
