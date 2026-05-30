@@ -18,6 +18,7 @@ export type Book = {
   coverImage?: string;
   shortDescription: string;
   emotionalDescription: string;
+  curatorConnection: string;
   voiceNote?: string;
   practicalNotes?: string[];
   emotionalTone: EmotionalTone[];

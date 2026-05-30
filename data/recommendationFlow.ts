@@ -70,10 +70,10 @@ export const giftQuestions: Question[] = [
     prompt: "Hur skulle du beskriva den du köper till?",
     subtext: "Välj det som känns närmast. Det behöver inte vara exakt.",
     answers: [
-      { id: "warm_carries_others", label: "Varm och nära, bär mycket för andra" },
-      { id: "thoughtful_depth", label: "Eftertänksam, föredrar djup framför bredd" },
-      { id: "curious_outward", label: "Nyfiken på världen, öppen och utåtriktad" },
-      { id: "private_needs_space", label: "Privat. Behöver tid för sig själv." },
+      { id: "warm_carries_others", label: "Varm och nära, bryr sig mycket om andra" },
+      { id: "thoughtful_depth", label: "Tycker om att stanna upp och fundera" },
+      { id: "curious_outward", label: "Nyfiken på världen och människor" },
+      { id: "private_needs_space", label: "Trivs bäst med sitt eget sällskap ibland" },
       { id: "uncertain_not_close", label: "Jag vet inte riktigt. Vi är inte så nära." },
     ],
   },
@@ -84,9 +84,10 @@ export const giftQuestions: Question[] = [
     answers: [
       { id: "going_through_difficulty", label: "Något tungt pågår" },
       { id: "new_beginning", label: "Något nytt är på väg, förändring eller möjlighet" },
-      { id: "quiet_lonely_period", label: "En stillsam period, kanske lite ensamhet" },
+      { id: "quiet_lonely_period", label: "En lugnare period just nu" },
       { id: "needs_respite", label: "Behöver andrum, livet kräver mycket" },
       { id: "ordinary_moment", label: "Inget särskilt. Ett vanligt läge." },
+      { id: "uncertain_life_moment", label: "Jag vet inte riktigt" },
     ],
   },
   {
@@ -95,8 +96,8 @@ export const giftQuestions: Question[] = [
     subtext: "Det här är ofta det bästa sättet att hitta rätt bok.",
     answers: [
       { id: "hope_companionship", label: "Ge sällskap, att känna sig mindre ensam" },
-      { id: "hope_relief", label: "Ge lite lättnad, en paus från det som är tungt" },
-      { id: "hope_perspective", label: "Öppna upp något, ge perspektiv eller tankar" },
+      { id: "hope_relief", label: "Ge lite lättnad, en paus från vardagen" },
+      { id: "hope_perspective", label: "Öppna upp något, ge nya tankar eller perspektiv" },
       { id: "hope_joy_of_reading", label: "Påminna om att läsning kan vara en glädje" },
       { id: "hope_beauty", label: "Ge något vackert. Ingenting mer." },
     ],
@@ -108,7 +109,7 @@ export const giftQuestions: Question[] = [
       { id: "regular_reader", label: "Läser regelbundet och mycket" },
       { id: "occasional_reader", label: "Läser när livet lämnar plats" },
       { id: "aspiring_reader", label: "Vill läsa mer. Det har blivit en önskan." },
-      { id: "uncertain_reading_life", label: "Jag är inte säker. Vi pratar inte om böcker." },
+      { id: "uncertain_reading_life", label: "Jag vet inte riktigt vad personen brukar läsa." },
     ],
   },
 ];

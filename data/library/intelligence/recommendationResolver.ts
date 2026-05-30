@@ -12,7 +12,9 @@ export type CuratorRevealCopy = {
   recognition: string;
   whyThisBook: string;
   readingExperienceNote: string;
+  practicalNotes: string[];
   placement: string;
+  quietCta: string;
 };
 
 export type RecommendationResolution = {
@@ -141,9 +143,11 @@ function buildCuratorRevealCopy(
   return {
     openingLine: openingLineForProfile(primaryProfile, book),
     recognition: lifeMoment.revealNote,
-    whyThisBook: connectionForProfile(primaryProfile, book),
+    whyThisBook: book.curatorConnection,
     readingExperienceNote: book.voiceNote ?? book.emotionalDescription,
+    practicalNotes: book.practicalNotes ?? [],
     placement: placementForBook(book, interpretation),
+    quietCta: "Hitta boken",
   };
 }
 
@@ -173,46 +177,6 @@ function openingLineForProfile(profileId: EmotionProfileId, book: Book) {
   }
 
   return book.shortDescription;
-}
-
-function connectionForProfile(profileId: EmotionProfileId, book: Book) {
-  if (profileId === "comfort") {
-    return `${book.title} passar här för att den inte försöker skynda på känslan. Den ger närvaro utan att göra stora anspråk.`;
-  }
-
-  if (profileId === "recovery") {
-    return `${book.title} har den sortens lugn som låter läsningen börja i liten skala. Den möter trötthet utan att förenkla den.`;
-  }
-
-  if (profileId === "companionship") {
-    return `${book.title} fungerar som sällskap snarare än förklaring. Den låter någon annan vara nära utan att ta över rummet.`;
-  }
-
-  if (profileId === "perspective") {
-    return `${book.title} ger avstånd på ett stillsamt sätt. Den hjälper tanken att byta plats utan att tala om vad man ska tänka.`;
-  }
-
-  if (profileId === "reflection") {
-    return `${book.title} stannar upp där många böcker går vidare. Den ger eftertanken form utan att göra den tung i onödan.`;
-  }
-
-  if (profileId === "wonder") {
-    return `${book.title} ger något vackert att rikta blicken mot. Den öppnar snarare än pressar.`;
-  }
-
-  if (profileId === "curiosity") {
-    return `${book.title} har tillräckligt med rörelse för att väcka nyfikenhet, men behåller den lugna precision som gör valet tryggt.`;
-  }
-
-  if (profileId === "meaning") {
-    return `${book.title} ger plats åt det som inte behöver lösas direkt. Den litar på att läsaren orkar med allvaret.`;
-  }
-
-  if (profileId === "renewal" || profileId === "hope") {
-    return `${book.title} bär en lågmäld framåtrörelse. Den ger ljus utan att bli förenklad.`;
-  }
-
-  return book.emotionalDescription;
 }
 
 function placementForBook(book: Book, interpretation: AnswerInterpretation) {

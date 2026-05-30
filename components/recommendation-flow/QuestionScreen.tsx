@@ -42,6 +42,10 @@ export function QuestionScreen({ flow, questions, intro }: QuestionScreenProps) 
     router.push(`/recommend/result?${params.toString()}`);
   }
 
+  function handleGoTo(step: number) {
+    setCurrentIndex(step - 1);
+  }
+
   return (
     <motion.section
       key={currentQuestion.id}
@@ -52,7 +56,11 @@ export function QuestionScreen({ flow, questions, intro }: QuestionScreenProps) 
       aria-labelledby="question-title"
     >
       <motion.div variants={slowReveal}>
-        <ProgressIndicator current={currentStep} total={questions.length} />
+        <ProgressIndicator
+          current={currentStep}
+          total={questions.length}
+          onGoTo={currentIndex > 0 ? handleGoTo : undefined}
+        />
         <p className="mb-5 text-sm uppercase tracking-[0.18em] text-brass-muted">
           {intro}
         </p>
@@ -77,6 +85,7 @@ export function QuestionScreen({ flow, questions, intro }: QuestionScreenProps) 
           <AnswerCard
             key={answer.id}
             answer={answer}
+            selected={answers[currentQuestion.id] === answer.id}
             onSelect={handleSelect}
           />
         ))}

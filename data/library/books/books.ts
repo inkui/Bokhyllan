@@ -9,8 +9,10 @@ export const books: Book[] = [
     shortDescription: "Mörk, klar och djupt mänsklig.",
     emotionalDescription:
       "Det här är en bok för när man vill att läsningen ska få ta plats på riktigt. Den rör sig långsamt genom landskap, minne och skuld, men bär hela tiden en märklig värme: som om någon tänder en lampa i ett rum man först trodde var tomt.",
+    curatorConnection:
+      "Händelser vid vatten har tyngd utan att bli sluten. Den tar sig tid med landskapet och det som dröjer kvar, och litar på att läsaren orkar stanna där.",
     voiceNote:
-      "Rösten är tät och stillsam, med ett förtroende för läsaren. Den förklarar inte för mycket, men lämnar aldrig känslan utan sällskap.",
+      "Den rör sig långsamt och vill ha din närvaro. Ge den några ostörda kvällar.",
     practicalNotes: [
       "ca 470 sidor",
       "långsam läsning",
@@ -38,8 +40,10 @@ export const books: Book[] = [
     shortDescription: "Varsam, ljus och stilla stark.",
     emotionalDescription:
       "Det här är en bok för den som behöver något långsamt och bärande. Den rör sig som ett förtroligt brev genom tro, minne och kärlek, och låter de små sakerna få sin rätta tyngd utan att höja rösten.",
+    curatorConnection:
+      "Gilead har den sortens stillhet som inte känns tom. Den gör plats för de små sakerna och kräver inte att läsningen ska gå fort.",
     voiceNote:
-      "Rösten är mild men aldrig tunn. Den har en sällsynt förmåga att göra vardagen större utan att göra den högtidlig.",
+      "Den skyndar inte. Läs några sidor åt gången, eller låt den ta en hel kväll.",
     practicalNotes: [
       "ca 280 sidor",
       "lågmäld",
@@ -67,8 +71,10 @@ export const books: Book[] = [
     shortDescription: "Elegant, varm och ovanligt sällskaplig.",
     emotionalDescription:
       "Det här är en bok för när man vill kliva in i en värld som känns stor men ändå trygg. Den har rörelse, kvickhet och mänsklig värme, men låter aldrig charmen bli tom eller stressad.",
+    curatorConnection:
+      "En gentleman i Moskva är generös utan att bli påträngande. Den har värme, rörelse och gott om plats att stanna kvar i.",
     voiceNote:
-      "Rösten är generös och behärskad, med ett lugnt förtroende för att goda samtal, måltider och små ritualer kan bära ett helt liv.",
+      "Den är lång, men lätt att gå in i. Ge den gärna några sammanhängande kvällar.",
     practicalNotes: [
       "ca 460 sidor",
       "uppslukande",
@@ -95,8 +101,10 @@ export const books: Book[] = [
     shortDescription: "Ljus, kantig och öm utan sentimentalitet.",
     emotionalDescription:
       "En liten bok som rymmer ovanligt mycket luft. Den passar när man vill ha värme, men inte tröst som förenklar; här finns närhet, egensinne och en stillsam respekt för både barn och vuxna.",
+    curatorConnection:
+      "Sommarboken är liten nog att inte ställa sig i vägen. Den har värme, luft och en kantighet som gör att den aldrig blir inställsam.",
     voiceNote:
-      "Rösten är klar och varsam, med små skiftningar som gör att det enkla aldrig blir tunt.",
+      "Den klarar sig med korta stunder. Man kan lägga ner den och ta upp den igen.",
     practicalNotes: ["kort", "lågmäld", "natur och närhet", "mjuk efterklang"],
     emotionalTone: ["warm", "clear", "tender"],
     readingState: ["wants_comfort", "overstimulated", "searching_for_calm"],
@@ -118,8 +126,10 @@ export const books: Book[] = [
     shortDescription: "Klar, sårig och skoningslöst mänsklig.",
     emotionalDescription:
       "Det här är en bok för den som vill möta något rakt, inte bli avledd. Den är mörk och precis, men också märkligt levande i sin blick på skuld, begär och de känslor man helst vill slippa se.",
+    curatorConnection:
+      "Bränt barn väjer inte för det svåra och försöker inte mildra det. Språket är rakt, nära och utan överflöd.",
     voiceNote:
-      "Språket är stramt och brännande, med en skärpa som aldrig känns mekanisk.",
+      "Det är en koncentrerad bok. Läs den när du har lite ostörd uppmärksamhet.",
     practicalNotes: ["kort till medellång", "emotionellt intensiv", "klar prosa"],
     emotionalTone: ["clear", "melancholic", "haunting"],
     readingState: ["ready_for_depth", "grieving", "needs_perspective"],
@@ -141,8 +151,10 @@ export const books: Book[] = [
     shortDescription: "Skarp, stilla och ovanligt lyhörd.",
     emotionalDescription:
       "En bok för den som vill ha klarhet utan att bli styrd. Den lyssnar mer än den förklarar, och låter människors berättelser lägga sig bredvid varandra tills något större långsamt framträder.",
+    curatorConnection:
+      "Outline håller sig lite på avstånd och låter samtalen göra arbetet. Den ger tanken utrymme utan att tala om var den ska landa.",
     voiceNote:
-      "Rösten är sval men inte kall; den har en närvaro som bygger förtroende genom precision.",
+      "Den är stilla och samtalande. Läs den gärna när du vill ha rum att tänka.",
     practicalNotes: ["ca 250 sidor", "samtalande", "klartänkt", "lågmäld"],
     emotionalTone: ["clear", "still"],
     readingState: ["wants_intellectual_clarity", "needs_perspective"],
@@ -164,8 +176,10 @@ export const books: Book[] = [
     shortDescription: "Återhållen, sorgsen och vackert klar.",
     emotionalDescription:
       "Det här är en bok för någon som uppskattar det outsagda. Den rör sig varsamt genom minne, plikt och förlorade möjligheter, och blir stark just för att den aldrig ber om stora gester.",
+    curatorConnection:
+      "Återstoden av dagen arbetar med det outsagda. Den är behärskad och exakt, och låter det viktiga bli synligt i sin egen takt.",
     voiceNote:
-      "Rösten är behärskad och exakt, med en sorg som långsamt blir synlig mellan raderna.",
+      "Den vill läsas långsamt. Låt det som inte sägs få ta plats.",
     practicalNotes: ["ca 270 sidor", "stilla sorg", "elegant prosa"],
     emotionalTone: ["melancholic", "clear", "tender"],
     readingState: ["needs_perspective", "grieving", "ready_for_depth"],
@@ -187,8 +201,10 @@ export const books: Book[] = [
     shortDescription: "Stillsam, rak och överraskande gripande.",
     emotionalDescription:
       "En bok för den som vill läsa om ett vanligt liv utan att det görs mindre. Den är lågmäld och klar, med en tro på att värdighet kan finnas i det som nästan ingen annan ser.",
+    curatorConnection:
+      "Stoner ser det till synes vanliga utan att göra det mindre. Den är rak, stillsam och märkligt trogen det som annars lätt förbises.",
     voiceNote:
-      "Rösten är enkel på ytan men mycket omsorgsfull, med en långsam tyngd som stannar kvar.",
+      "Den rör sig lugnt och vinner på att få tid. En bra bok för stilla kvällar.",
     practicalNotes: ["ca 300 sidor", "lågmäld", "djup efterklang"],
     emotionalTone: ["still", "melancholic", "tender"],
     readingState: ["emotionally_tired", "needs_perspective", "lonely"],
@@ -210,8 +226,10 @@ export const books: Book[] = [
     shortDescription: "Sökande, dunkel och varsamt sorgsen.",
     emotionalDescription:
       "Det här är en bok för när frånvaro känns viktigare än svar. Den söker efter spår utan att äga dem, och låter minnet vara både ömtåligt och nödvändigt.",
+    curatorConnection:
+      "Dora Bruder söker efter spår utan att fylla i det som saknas. Den lämnar utrymme för frånvaron och gör det med stor försiktighet.",
     voiceNote:
-      "Rösten är lågmäld och nästan viskande, med en moralisk uppmärksamhet som gör tystnaden betydelsefull.",
+      "Det är en kort och mycket stilla bok. Läs den utan brådska.",
     practicalNotes: ["kort", "sökande", "melankolisk", "historisk tyngd"],
     emotionalTone: ["melancholic", "haunting", "still"],
     readingState: ["grieving", "ready_for_depth", "needs_perspective"],
@@ -233,8 +251,10 @@ export const books: Book[] = [
     shortDescription: "Klar, vemodig och elegant mänsklig.",
     emotionalDescription:
       "En bok för den som vill läsa något svenskt, tidlöst och emotionellt exakt. Den ser på längtan och självbedrägeri utan att moralisera, och gör det med en prosa som fortfarande känns levande.",
+    curatorConnection:
+      "Den allvarsamma leken ser klart på längtan utan att moralisera. Den har en lätthet i språket som lämnar gott om plats för eftertanken.",
     voiceNote:
-      "Rösten är elegant och skarp, men aldrig prålig; värmen ligger i precisionen.",
+      "Den är lätt att gå in i och svår att hasta förbi. Läs den i lugn takt.",
     practicalNotes: ["kort till medellång", "klassisk", "vemodig klarhet"],
     emotionalTone: ["clear", "melancholic", "tender"],
     readingState: ["needs_perspective", "wants_intellectual_clarity"],
@@ -256,8 +276,10 @@ export const books: Book[] = [
     shortDescription: "Klar, stilla och vidöppen.",
     emotionalDescription:
       "En tunn bok för när man inte orkar bära en hel roman men ändå vill läsa något som öppnar rummet. Dikterna är precisa utan att stänga, och kan ge en märklig känsla av syre.",
+    curatorConnection:
+      "Det vilda torget är tunn nog att bära med sig och öppen nog att återvända till. Dikterna ger rymd utan att kräva långa stunder.",
     voiceNote:
-      "Rösten är stilla och koncentrerad, med bilder som får vardagen att luta mot något större.",
+      "Läs en dikt i taget. Den behöver inte tas från början till slut.",
     practicalNotes: ["poesi", "kort", "kan läsas långsamt", "mycket rymd"],
     emotionalTone: ["clear", "still", "hopeful"],
     readingState: ["overstimulated", "searching_for_calm", "emotionally_tired"],
@@ -279,8 +301,10 @@ export const books: Book[] = [
     shortDescription: "Mustig, mörk och mänskligt rik.",
     emotionalDescription:
       "Det här är en bok för den som vill ha en större berättelse med tyngd, värme och jord under naglarna. Den är inte lätt, men den har en levande kraft som gör att världen känns befolkad på riktigt.",
+    curatorConnection:
+      "Samuels bok har tyngd och rörelse på samma gång. Den är rik på människor och miljöer, men håller ihop sin egen rytm.",
     voiceNote:
-      "Rösten är rik och säker, med både skärpa och berättarglädje.",
+      "Det är en bok att ge sammanhängande tid. Låt den breda ut sig över flera kvällar.",
     practicalNotes: ["lång", "svensk berättarkraft", "mörk värme"],
     emotionalTone: ["immersive", "warm", "haunting"],
     readingState: ["wants_immersion", "ready_for_depth"],

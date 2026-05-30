@@ -70,8 +70,13 @@ export function RecommendationReveal({
           recommendation={recommendation}
           curatorCopy={curatorCopy}
         />
-        <PracticalNotes notes={recommendation.practicalNotes} />
-        <RecommendationActions recommendation={recommendation} />
+        <PracticalNotes
+          notes={curatorCopy?.practicalNotes ?? recommendation.practicalNotes}
+        />
+        <RecommendationActions
+          recommendation={recommendation}
+          quietCta={curatorCopy?.quietCta}
+        />
       </motion.article>
     </motion.section>
   );

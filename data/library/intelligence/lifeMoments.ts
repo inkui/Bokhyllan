@@ -30,104 +30,104 @@ export const lifeMoments: Record<LifeMomentId, LifeMoment> = {
     name: "ny vardag",
     profiles: ["companionship", "comfort", "wonder"],
     revealNote:
-      "Det här känns som en bok för en tid då dagarna är fulla, men man ändå behöver något eget och stilla.",
+      "Dagarna verkar vara fulla just nu. Då får läsningen gärna vara något eget och stilla.",
   },
   retirement: {
     id: "retirement",
     name: "ny rytm",
     profiles: ["reflection", "perspective", "renewal"],
     revealNote:
-      "Det här känns som en bok för en ny rytm i livet, när tankarna får ta mer plats.",
+      "När vardagen får en ny rytm kan det vara skönt med en bok som låter tankarna ta plats.",
   },
   grief: {
     id: "grief",
     name: "sorg",
     profiles: ["meaning", "comfort", "reflection"],
     revealNote:
-      "Det här känns som en bok för när man inte vill bli uppmuntrad för snabbt, bara få sällskap i det som är svårt.",
+      "Det svåra behöver inte göras lättare än det är. Ibland räcker det med stilla sällskap.",
   },
   burnout: {
     id: "burnout",
     name: "utmattning",
     profiles: ["recovery", "comfort", "wonder"],
     revealNote:
-      "Det här känns som en bok för en tid då man behöver läsa långsammare och låta uppmärksamheten komma tillbaka.",
+      "Det verkar vara en tid för något som inte ställer stora krav. Läsningen får börja i liten skala.",
   },
   life_transition: {
     id: "life_transition",
     name: "övergång",
     profiles: ["perspective", "hope", "reflection"],
     revealNote:
-      "Det här känns som en bok för en övergång, när något håller på att bli tydligare men ännu inte har satt sig.",
+      "Något verkar vara i rörelse, utan att riktigt ha satt sig ännu. Då kan en bok få ge lite utrymme.",
   },
   loneliness: {
     id: "loneliness",
     name: "ensamhet",
     profiles: ["companionship", "comfort", "hope"],
     revealNote:
-      "Det här känns som en bok för när man vill ha sällskap utan att bli överröstad.",
+      "Du verkar söka sällskap, men inte något som tar över rummet.",
   },
   rediscovering_reading: {
     id: "rediscovering_reading",
     name: "hitta tillbaka",
     profiles: ["renewal", "comfort", "curiosity"],
     revealNote:
-      "Det här känns som en bok för att hitta tillbaka till läsningen utan att behöva prestera.",
+      "Det får vara enkelt att hitta tillbaka till läsningen. Ingen prestation, bara en bok att börja med.",
   },
   starting_over: {
     id: "starting_over",
     name: "börja om",
     profiles: ["hope", "renewal", "perspective"],
     revealNote:
-      "Det här känns som en bok för när man börjar om, även om man inte riktigt säger det högt.",
+      "Det finns en försiktig rörelse framåt här. Den behöver inte göras större än den är.",
   },
   creative_block: {
     id: "creative_block",
     name: "skapande tröghet",
     profiles: ["curiosity", "wonder", "renewal"],
     revealNote:
-      "Det här känns som en bok för när tanken behöver öppnas lite, utan att någon kräver ett svar.",
+      "Du verkar vilja öppna ett fönster, inte få ett färdigt svar.",
   },
   seeking_calm: {
     id: "seeking_calm",
     name: "söker lugn",
     profiles: ["recovery", "comfort", "reflection"],
     revealNote:
-      "Det här känns som en bok för en stund då man vill sänka rösten och komma närmare sig själv.",
+      "Du verkar söka något lågmält. En bok som inte skyndar på någonting.",
   },
   after_change: {
     id: "after_change",
     name: "efter förändring",
     profiles: ["reflection", "meaning", "hope"],
     revealNote:
-      "Det här känns som en bok för tiden efter något har skiftat, när man fortfarande lyssnar efter vad det betyder.",
+      "Något har skiftat, och det behöver kanske få vara oklart ett tag.",
   },
   quiet_weekend: {
     id: "quiet_weekend",
     name: "stilla helg",
     profiles: ["comfort", "wonder", "reflection"],
     revealNote:
-      "Det här känns som en bok för en långsam stund, när läsningen får vara lågmäld men inte tom.",
+      "Det verkar finnas plats för en långsam stund. Något lågmält, men inte tomt.",
   },
   intellectual_restlessness: {
     id: "intellectual_restlessness",
     name: "tankemässig rastlöshet",
     profiles: ["curiosity", "perspective", "meaning"],
     revealNote:
-      "Det här känns som en bok för någon som behöver något med motstånd, men inte med buller.",
+      "Du verkar vilja ha något med motstånd, men inte med buller.",
   },
   hard_to_reach_person: {
     id: "hard_to_reach_person",
     name: "svår att nå",
     profiles: ["perspective", "reflection", "companionship"],
     revealNote:
-      "Det här känns som en bok för någon man vill nå varsamt, utan att välja något för enkelt.",
+      "Det här får gärna vara en varsam gåva, utan att bli ett alltför enkelt val.",
   },
   needs_brightness: {
     id: "needs_brightness",
     name: "behöver ljus",
     profiles: ["hope", "companionship", "renewal"],
     revealNote:
-      "Det här känns som en bok som kan ge lite ljus utan att låtsas att allt är enkelt.",
+      "Du verkar söka lite ljus, men inget som låtsas att allt är enkelt.",
   },
 };
