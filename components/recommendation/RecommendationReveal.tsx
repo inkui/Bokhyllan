@@ -61,7 +61,7 @@ export function RecommendationReveal({
         <p className="mt-3 text-base text-ink-soft">av {recommendation.author}</p>
 
         {curatorCopy?.recognition ? (
-          <p className="mt-7 border-l border-brass/70 pl-5 font-serif text-[1.18rem] leading-8 text-ink-soft sm:text-xl">
+          <p className="mt-6 font-serif text-[1.08rem] leading-8 text-ink-soft sm:text-lg">
             {curatorCopy.recognition}
           </p>
         ) : null}

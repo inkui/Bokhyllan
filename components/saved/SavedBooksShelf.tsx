@@ -28,7 +28,7 @@ export function SavedBooksShelf() {
     return (
       <div className="max-w-xl border-t border-brass/30 pt-7">
         <p className="font-serif text-2xl leading-9 text-ink-soft">
-          Här är det stilla än så länge.
+          Inga böcker vilar här än.
         </p>
         <p className="mt-4 text-base leading-7 text-ink-soft">
           När en bok känns värd att återvända till kan du låta den vila här.

@@ -11,17 +11,19 @@ export function RecommendationExplanation({
   curatorCopy,
 }: RecommendationExplanationProps) {
   if (curatorCopy) {
+    const callout = [curatorCopy.readingExperienceNote, curatorCopy.placement]
+      .filter(Boolean)
+      .join(" ");
     return (
       <div className="mt-8 space-y-6">
         <p className="font-serif text-[1.18rem] leading-8 text-ink sm:text-[1.35rem] sm:leading-9">
           {curatorCopy.whyThisBook}
         </p>
-        <p className="border-l border-brass/70 pl-5 text-[0.98rem] leading-7 text-ink-soft sm:text-base">
-          {curatorCopy.readingExperienceNote}
-        </p>
-        <p className="font-serif text-[1.08rem] leading-8 text-ink-soft sm:text-xl">
-          {curatorCopy.placement}
-        </p>
+        {callout ? (
+          <p className="border-l border-brass/50 pl-5 text-[0.98rem] leading-7 text-ink-soft sm:text-base">
+            {callout}
+          </p>
+        ) : null}
       </div>
     );
   }

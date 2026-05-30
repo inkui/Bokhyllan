@@ -45,7 +45,7 @@ export function RecommendationActions({
           }}
           className="min-h-11 rounded-quiet px-4 py-3 text-left text-base text-ink-soft transition-colors duration-calm hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass sm:text-center"
         >
-          {saved ? "Boken vilar här nu" : "Låt den vila här så länge"}
+          {saved ? "Boken vilar här" : "Låt den vila här"}
         </button>
         <Link
           href="/"
@@ -56,14 +56,14 @@ export function RecommendationActions({
       </div>
       {!saved ? (
         <p className="mt-3 text-sm leading-6 text-ink-muted">
-          Kanske inte idag. Låt den vila här så länge.
+          Den kan vänta.
         </p>
       ) : (
         <Link
           href="/saved"
           className="mt-3 inline-flex min-h-11 items-center rounded-quiet text-sm text-ink-muted underline decoration-brass/50 underline-offset-4 transition-colors duration-calm hover:text-ink-soft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass"
         >
-          Gå till böckerna som vilar
+          Gå till böckerna
         </Link>
       )}
     </div>
