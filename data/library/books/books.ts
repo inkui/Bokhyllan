@@ -5,6 +5,7 @@ export const books: Book[] = [
     id: "handelser-vid-vatten",
     title: "Händelser vid vatten",
     author: "Kerstin Ekman",
+    genres: ["literary_fiction"],
     coverImage: "/covers/handelser-vid-vatten.svg",
     shortDescription: "Mörk, klar och djupt mänsklig.",
     emotionalDescription:
@@ -36,6 +37,9 @@ export const books: Book[] = [
     id: "gilead",
     title: "Gilead",
     author: "Marilynne Robinson",
+    isbn13: "9780312424404",
+    genres: ["literary_fiction"],
+    firstPublishedYear: 2004,
     coverImage: "/covers/gilead.svg",
     shortDescription: "Varsam, ljus och stilla stark.",
     emotionalDescription:
@@ -67,6 +71,9 @@ export const books: Book[] = [
     id: "gentleman-i-moskva",
     title: "En gentleman i Moskva",
     author: "Amor Towles",
+    originalTitle: "A Gentleman in Moscow",
+    genres: ["literary_fiction"],
+    firstPublishedYear: 2016,
     coverImage: "/covers/gentleman-i-moskva.svg",
     shortDescription: "Elegant, varm och ovanligt sällskaplig.",
     emotionalDescription:
@@ -98,6 +105,9 @@ export const books: Book[] = [
     id: "sommarboken",
     title: "Sommarboken",
     author: "Tove Jansson",
+    isbn13: "9789515217828",
+    genres: ["literary_fiction"],
+    firstPublishedYear: 1972,
     shortDescription: "Ljus, kantig och öm utan sentimentalitet.",
     emotionalDescription:
       "En liten bok som rymmer ovanligt mycket luft. Den passar när man vill ha värme, men inte tröst som förenklar; här finns närhet, egensinne och en stillsam respekt för både barn och vuxna.",
@@ -123,6 +133,7 @@ export const books: Book[] = [
     id: "brant-barn",
     title: "Bränt barn",
     author: "Stig Dagerman",
+    genres: ["literary_fiction"],
     shortDescription: "Klar, sårig och skoningslöst mänsklig.",
     emotionalDescription:
       "Det här är en bok för den som vill möta något rakt, inte bli avledd. Den är mörk och precis, men också märkligt levande i sin blick på skuld, begär och de känslor man helst vill slippa se.",
@@ -148,6 +159,7 @@ export const books: Book[] = [
     id: "outline",
     title: "Outline",
     author: "Rachel Cusk",
+    genres: ["literary_fiction"],
     shortDescription: "Skarp, stilla och ovanligt lyhörd.",
     emotionalDescription:
       "En bok för den som vill ha klarhet utan att bli styrd. Den lyssnar mer än den förklarar, och låter människors berättelser lägga sig bredvid varandra tills något större långsamt framträder.",
@@ -173,6 +185,7 @@ export const books: Book[] = [
     id: "aterstoden-av-dagen",
     title: "Återstoden av dagen",
     author: "Kazuo Ishiguro",
+    genres: ["literary_fiction"],
     shortDescription: "Återhållen, sorgsen och vackert klar.",
     emotionalDescription:
       "Det här är en bok för någon som uppskattar det outsagda. Den rör sig varsamt genom minne, plikt och förlorade möjligheter, och blir stark just för att den aldrig ber om stora gester.",
@@ -198,6 +211,9 @@ export const books: Book[] = [
     id: "stoner",
     title: "Stoner",
     author: "John Williams",
+    isbn13: "9781590171998",
+    genres: ["literary_fiction"],
+    firstPublishedYear: 1965,
     shortDescription: "Stillsam, rak och överraskande gripande.",
     emotionalDescription:
       "En bok för den som vill läsa om ett vanligt liv utan att det görs mindre. Den är lågmäld och klar, med en tro på att värdighet kan finnas i det som nästan ingen annan ser.",
@@ -223,6 +239,7 @@ export const books: Book[] = [
     id: "dora-bruder",
     title: "Dora Bruder",
     author: "Patrick Modiano",
+    genres: ["literary_fiction"],
     shortDescription: "Sökande, dunkel och varsamt sorgsen.",
     emotionalDescription:
       "Det här är en bok för när frånvaro känns viktigare än svar. Den söker efter spår utan att äga dem, och låter minnet vara både ömtåligt och nödvändigt.",
@@ -248,6 +265,7 @@ export const books: Book[] = [
     id: "den-allvarsamma-leken",
     title: "Den allvarsamma leken",
     author: "Hjalmar Söderberg",
+    genres: ["literary_fiction"],
     shortDescription: "Klar, vemodig och elegant mänsklig.",
     emotionalDescription:
       "En bok för den som vill läsa något svenskt, tidlöst och emotionellt exakt. Den ser på längtan och självbedrägeri utan att moralisera, och gör det med en prosa som fortfarande känns levande.",
@@ -273,6 +291,7 @@ export const books: Book[] = [
     id: "det-vilda-torget",
     title: "Det vilda torget",
     author: "Tomas Tranströmer",
+    genres: ["poetry"],
     shortDescription: "Klar, stilla och vidöppen.",
     emotionalDescription:
       "En tunn bok för när man inte orkar bära en hel roman men ändå vill läsa något som öppnar rummet. Dikterna är precisa utan att stänga, och kan ge en märklig känsla av syre.",
@@ -298,6 +317,7 @@ export const books: Book[] = [
     id: "samuel-bok",
     title: "Samuels bok",
     author: "Sven Delblanc",
+    genres: ["literary_fiction"],
     shortDescription: "Mustig, mörk och mänskligt rik.",
     emotionalDescription:
       "Det här är en bok för den som vill ha en större berättelse med tyngd, värme och jord under naglarna. Den är inte lätt, men den har en levande kraft som gör att världen känns befolkad på riktigt.",

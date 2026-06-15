@@ -1,3 +1,4 @@
+import { resolveBookBuyLink } from "@/lib/affiliate/affiliateBridge";
 import type {
   AffiliateLinkRequest,
   AffiliateLinkResult,
@@ -6,11 +7,5 @@ import type {
 export function createMockAffiliateLink(
   request: AffiliateLinkRequest,
 ): AffiliateLinkResult {
-  return {
-    label: "Hitta boken",
-    url: "#",
-    retailer: request.retailer,
-    provider: "mock",
-    isAffiliate: false,
-  };
+  return resolveBookBuyLink(request);
 }

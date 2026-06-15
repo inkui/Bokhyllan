@@ -15,6 +15,11 @@ export type Book = {
   id: string;
   title: string;
   author: string;
+  originalTitle?: string;
+  isbn13?: string;
+  bokusUrl?: string;
+  genres?: string[];
+  firstPublishedYear?: number;
   coverImage?: string;
   shortDescription: string;
   emotionalDescription: string;

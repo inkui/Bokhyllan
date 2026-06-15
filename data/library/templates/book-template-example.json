@@ -1,0 +1,11 @@
+{
+  "id": "example-book",
+  "title": "Example Title",
+  "author": "Example Author",
+  "originalTitle": "Example Original Title",
+  "language": "en",
+  "firstPublishedYear": 2000,
+  "isbn13": "0000000000000",
+  "bokusUrl": "",
+  "genres": ["literary_fiction"]
+}

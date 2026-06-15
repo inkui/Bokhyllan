@@ -1,11 +1,23 @@
 import type { Recommendation } from "@/data/sampleRecommendations";
+import {
+  getSavedShelfItems,
+  type SavedShelfSource,
+  type SavedShelfState,
+} from "@/lib/library/saved-shelf";
 
 export const SAVED_BOOKS_STORAGE_KEY = "bokhyllan:saved-books";
+const legacySavedAt = "";
 
 export type SavedBook = Pick<
   Recommendation,
   "id" | "title" | "author" | "coverImage" | "emotionalDescriptor"
 >;
+
+export type SavedBooksToShelfStateOptions = {
+  savedAt?: string;
+  updatedAt?: string;
+  source?: SavedShelfSource;
+};
 
 function isSavedBook(value: unknown): value is SavedBook {
   if (!value || typeof value !== "object") {
@@ -21,6 +33,33 @@ function isSavedBook(value: unknown): value is SavedBook {
     typeof book.coverImage === "string" &&
     typeof book.emotionalDescriptor === "string"
   );
+}
+
+// Compatibility bridge for a future C8 SavedShelfState migration. Runtime storage still uses SavedBook[].
+export function toSavedShelfState(
+  savedBooks: readonly SavedBook[],
+  options: SavedBooksToShelfStateOptions = {},
+): SavedShelfState {
+  return {
+    items: savedBooks.map((book) => ({
+      bookId: book.id,
+      savedAt: options.savedAt ?? legacySavedAt,
+      status: "saved",
+      source: options.source ?? "unknown",
+    })),
+    updatedAt: options.updatedAt,
+  };
+}
+
+export function fromSavedShelfState(
+  state: SavedShelfState,
+  savedBooks: readonly SavedBook[],
+): SavedBook[] {
+  const savedBooksById = new Map(savedBooks.map((book) => [book.id, book]));
+
+  return getSavedShelfItems(state)
+    .map((item) => savedBooksById.get(item.bookId))
+    .filter((book): book is SavedBook => Boolean(book));
 }
 
 export function readSavedBooks(): SavedBook[] {

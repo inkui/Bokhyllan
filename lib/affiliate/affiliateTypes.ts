@@ -8,7 +8,7 @@ export type AffiliateProviderId =
   | "mock";
 
 export type AffiliateLinkRequest = {
-  retailer: RetailerId;
+  retailer?: RetailerId;
   provider?: AffiliateProviderId;
   isbn?: string;
   title: string;
@@ -21,4 +21,10 @@ export type AffiliateLinkResult = {
   retailer: RetailerId;
   provider: AffiliateProviderId;
   isAffiliate: boolean;
+};
+
+export type AffiliateAdapter = {
+  retailer: RetailerId;
+  provider: AffiliateProviderId;
+  createLink: (request: AffiliateLinkRequest) => AffiliateLinkResult;
 };
